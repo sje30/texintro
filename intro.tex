@@ -15,7 +15,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Bibliography style:
-\usepackage{mathptmx}           % Use the Times font.
+\usepackage{mathpazo}           % Math+Palatino
 \usepackage{graphicx}           % Needed for including graphics.
 \usepackage{url}                % Facility for activating URLs.
 \usepackage{verbatim}           % For verbatiminput command.
@@ -97,7 +97,7 @@ pdflatex intro                  ## Run latex 1st time
 bibtex intro                    ## Find references
 pdflatex intro                  ## Run to resolve references
 pdflatex intro                  ## sometimes twice!
-xpdf intro.pdf                  ## View the resulting PDF
+open intro.pdf                  ## View the resulting PDF (use xdg-open on linux)
 \end{verbatim}
 
 You will notice that you run latex several times here; this is so that
@@ -274,9 +274,9 @@ self-explanatory.  It is, however, hopefully enough to get you
 started!  Try experimenting by editing the source file and then
 recompiling this document.  As mentioned earlier, there are many
 guides for latex.  Two that I can recommend are
-\url{http://www.andy-roberts.net/misc/latex/index.html} and 
+\url{https://www.andy-roberts.net/latex/} and 
 `` The (Not So) Short Introduction to LaTeX2e''
-(\url{http://ctan.tug.org/tex-archive/info/lshort/english/lshort.pdf}).
+(\url{https://github.com/oetiker/lshort}).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Finally we specify the format required for our references and the
